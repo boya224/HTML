@@ -273,7 +273,7 @@ section .shared_space{
 }
 
 .communitie_txt{
-  color: #ffffff;
+  color: #161515;
     font-family: 'IBM Plex Sans Devanagari','Open Sans';
     font-size: 16px;
     font-style: normal;

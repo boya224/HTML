@@ -80,17 +80,20 @@ body {
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
+    transform: scale(1);
+    transition: transform 0.3s;
     
 }
 
 .nav_links a:hover{
-    transform: scale(1);
+    transform: scale(1.2);
 }
 
 
 .booknow_btn{
     width: 342px;
     margin: 81px 0px 0px 805px;
+    
   }
   .booknow_btn > a{
     display: block;
@@ -105,8 +108,13 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    transform: scale(1);
+    transition: transform 0.3s;
   }
 
+  .booknow_btn > a:hover{
+    transform: scale(1.2);
+  }
   
 
   /*we are gather living*/
@@ -208,6 +216,11 @@ body {
 .our_span_wrap{
     display: block;
     margin-top: 32px;
+}
+
+.our_span_wrap >span{
+    display: block;
+    padding: 13px 0px 0px 1px;
 }
 
 /*what's co-living*/
