@@ -1,0 +1,356 @@
+
+*{
+    margin: o;
+    padding: 0;
+    list-style: none;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .nav {
+    margin: 0;
+    padding: 0;
+    width: 1676.887px;
+    height: 100px;
+    border-radius: 100px;
+    background: rgba(30, 188, 195, 0.79);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    right: 105px;
+    
+    
+  }
+  
+  .nav_links a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  
+  
+  .base_bg_blue{
+    background: #AEECEF;
+
+  }
+  
+  
+  .base_bg_border{
+    background: url(/img/登入註冊背景.jpg) top center no-repeat;
+    padding-top: 305px;
+    padding-bottom: 386px;
+    margin-top: -101px;
+  }
+  
+  .switch_btn {
+    display: flex;
+  }
+  .swtch-container{
+    padding: 30px 0px 19px 0px;
+  }
+  /* Shared styles for the switch buttons */
+  .switch_btn .login,
+  .switch_btn .signup {
+    display: block;
+    width: 500px;
+    height: 50px;
+    line-height: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    color: #FFF;
+  }
+  
+  /* Styles for the "登入" (Login) button */
+  .switch_btn .login {
+    background: #1EBCC3;
+    color: #FFF;
+      margin-right: 10px;
+      border-radius: 50px 50px 0 0;
+      position: relative;
+      top: 594px;
+      left: 959px;
+  }
+  
+  /* Styles for the "註冊" (Signup) button */
+  .switch_btn .signup {
+    background: #EEE;
+    color: #C0C0C0;
+    border-radius: 50px 50px 0 0;
+    position: relative;
+    top: 543px;
+    left: 458px;
+    
+  }
+  
+  
+  .login-form-container{
+    width: 940px;
+    margin: 340px 10px 10px 458px;
+      border: 1px solid #1EBCC3;
+      padding: 30px;
+  }
+  
+  
+  
+  
+  
+  
+  .text-center.facebook-button {
+    width: 590px;
+    padding-top: 30px;
+    margin: auto;
+  
+  }
+  
+  .text-center.facebook-button a.fb-btn {
+    display: block;
+    text-align: center;
+    background-color: #5488C4;
+    padding: 10px 0;
+    text-decoration: none;
+    font-family: 'Noto Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color:#FFF
+  }
+  
+  .text-center.signup-button {
+    width: 590px;
+    padding-top: 30px;
+    margin: auto;
+  }
+  
+  .text-center.signup-button a.signup-btn {
+    display: block;
+    text-align: center;
+    background: #1EBCC3;
+      color: white;
+    padding: 10px 0;
+    text-decoration: none;
+    font-family: 'Noto Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+  }
+  
+  .text-center > h4{
+    text-align: center;
+      padding: 25px;
+  }
+  
+  .form-control{
+    text-align: start;
+  }
+  
+  .control-label , .col-sm-4{
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: start;
+    padding: 30px 80px 0px 0px;
+    text-align: left;
+  }
+  
+  .col-sm-8 > input {
+    width: 412px;
+    height: 53.99px;
+    border: 1px solid #1EBCC3;
+  }
+  
+  
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-group{
+    display: flex;
+    padding: 10px;
+  }
+  
+  .fix{
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   z-index: 4;
+   padding:0 20px 10px 0;
+  }
+  .item{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #1EBCC3;
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+       
+    
+  }
+  .fix a:nth-child(2) .item{
+    background-color: #FFC700;
+  }
+  .fix a{
+    text-decoration: none;
+    /* border: 1px solid red; */
+    font-size: 10px;
+    font-family: "Open Sans";
+    color: #FFF;
+    font-weight: 700;
+    
+    
+  }
+  
+  
+  
+  /*footer*/
+  .footer{
+      width: 1920px;
+      height: 761px;
+      background: #FFD234;
+      position: relative;
+      
+  
+    }
+    .blue_ar_container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .blue_ar_email {
+      position: absolute; 
+      right: 520px; 
+      bottom: 200px;
+      /* border: 1px solid red;  */
+    
+    }
+    .blue_ar{
+      position: absolute; 
+      bottom: 0;
+      margin: 36px 353px 0px 974px;
+      width: 593px;
+      height: 724px;
+      background: #AEECEF;
+      border-radius: 593px 593px 0 0;
+    }
+    
+    .blue_ar_title{
+      font-family: 'open sans';
+      font-size: 40px;
+      font-weight: 700;
+      position: absolute;
+      left: 115px;
+      top:175px
+    }
+    .blue_ar_title>span{
+      display: block;
+      margin-top: 10px;
+    }
+    .blue_ar_email form {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+    
+    .blue_ar_email input[type="text"] {
+      width: 254px;
+      height: 50px;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 61px; 
+    }
+    ::placeholder{
+      color: #1EBCC3;
+    }
+    /* Style the submit button */
+    .blue_ar_email input[type="submit"] {
+      width: 166px;
+      height: 62px;
+      padding: 10px;
+      margin: 5px;
+      background-color: #FFF;
+      color: #1EBCC3;
+      border: none;
+      border-radius: 61px; 
+      cursor: pointer;
+    }
+    .blue_ar_email input[value="SUBMIT"]{
+      font-family: 'open sans';
+      font-size: 20px;
+    }
+    .blue_ar_email input[name="email"]{
+      font-size: 20px;
+      padding-left: 50px;
+     
+    }
+    
+    
+    .footer_container{
+          position: absolute;
+          right: 1400px;
+          bottom: 300px;
+       
+      
+    }
+    
+    
+    .footer_link a{
+      padding: 17px;
+      display: block;
+      text-decoration: none;
+      color: #000;
+      font-family: 'Open Sans';
+      font-size: 30px;
+      font-weight: 700;
+    }
+    .line{
+      width: 515.633px;
+      border-bottom: 1px solid #000;
+      position: absolute;
+          left:390px;
+          bottom: 200px;
+    }
+    .tel , .address{
+      font-family: 'Zen Maru Gothic', sans-serif;
+      color: #000;
+      font-size: 16px;
+      font-weight: 400; 
+    }
+    .footer_info{
+      position: absolute;
+      left:390px;
+      bottom: 60px;
+    }
+    .social_media_icon{
+      position: absolute;
+      left:750px;
+      bottom: 150px;
+    }
+    
+    .social_media_icon>a{
+      padding: 6px;
+    }

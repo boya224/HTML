@@ -1,0 +1,489 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  overflow-x: hidden;
+}
+.header{
+width: 1920px;
+height: 960px;
+background: #FFC700;
+position: relative;
+}
+
+
+.header h1 {
+color: #FFF;
+font-family: 'Open Sans', sans-serif;
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin: 10px 0;
+text-align: center;
+position: relative;
+left: 30px;
+margin-top:-150px ;
+z-index: 0;
+/* border: 1px solid red; */
+
+}
+.header .activity {
+color: #FFF;
+font-family: 'Open Sans', sans-serif;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: center;
+position: relative;
+left: 30px;
+margin-top:-10px ;
+}
+
+.nav {
+  width: 1676.887px;
+  height: 100px;
+  border-radius: 100px;
+  background: rgba(30, 188, 195, 0.79);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* margin: 0 auto; */
+  position: absolute;
+  top: 50px;
+  right: 105px;
+  z-index: 4;
+}
+
+
+
+.nav_links {
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 65%;
+  
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/*回首頁圈圈*/
+
+.fix{
+ position: fixed;
+ bottom: 0;
+ right: 0;
+ z-index: 4;
+ padding:0 20px 10px 0;
+}
+.item{
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #1EBCC3;
+  text-align: center;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fix a:nth-child(2) .item{
+  background-color: #FFC700;
+}
+.fix a{
+  text-decoration: none;
+  /* border: 1px solid red; */
+  font-size: 10px;
+  font-family: "Open Sans";
+  color: #FFF;
+  font-weight: 700;
+}
+
+/*跑馬燈*/
+
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 18s linear infinite;
+  position: absolute;
+  bottom: 260px;
+  }
+  
+  @keyframes marquee {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+  }
+  
+  .marquee-container {
+    width: 100%; 
+    overflow: hidden; /* 隐藏超出容器的内容 */
+  }
+  
+  .marquee-content {
+    white-space: nowrap; 
+    /* animation: marquee 10s linear infinite; */
+  }
+
+
+.qabg{
+  margin-top: 114px;
+}
+
+
+
+
+.wrapper {
+  /* width: 200px; */
+  display: inline-block;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  border: 1px solid black;
+  padding: 5px 10px;
+  display: block;
+  margin: 2px 0;
+}
+
+.menu-wrapper {
+  overflow: hidden;
+  max-height: 0;
+}
+
+.wrapper{
+  width: 799.903px;
+  height: 60px;
+  border-radius: 30px 30px 0px 0px;
+  position: relative;
+    top: -1058px;
+    left: 562px;
+}
+
+#menu ~ label[for="menu"],[for="menu_mg"],[for="menu_rt"],[for="menu_server"],[for="menu_time"],[for="menu_other"] {
+  display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 799.903px;
+    border-radius: 30px 30px 0px 0px;
+    background: #FFD234;
+    justify-content: center;
+    align-content: center;
+    padding-top: -48px;
+    padding: 20px 0px 20px 0px;
+    margin: 38px 0 0 0;
+}
+
+label[for="menu"]:before {
+  content: '我有房源想出租，要如何上架房源到GATHER LIVING的平台上呢？ ';
+  color: #000;
+  font-family: 'IBM Plex Sans Devanagari';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  
+}
+label[for="menu_mg"]:before {
+  content: '代租代管（簡稱「代管」）是什麼？ ';
+  color: #000;
+  font-family: 'IBM Plex Sans Devanagari';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.1px;
+}
+label[for="menu_rt"]:before {
+  content: '包租包管（簡稱「包租」）是什麼？ ';
+  color: #000;
+  font-family: 'IBM Plex Sans Devanagari';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.1px;
+}
+label[for="menu_server"]:before {
+  content: '服務項目';
+  color: #000;
+  font-family: 'IBM Plex Sans Devanagari';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.1px;
+}
+label[for="menu_time"]:before {
+  content: '營業時間 ';
+  color: #000;
+  font-family: 'IBM Plex Sans Devanagari';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.1px;
+}
+label[for="menu_other"]:before {
+  content: '其他問題 ';
+  color: #000;
+  font-family: 'IBM Plex Sans Devanagari';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.1px;
+}
+
+#menu:checked ~ label[for="menu"]:before {
+  content: ' 我有房源想出租，要如何上架房源到GATHER LIVING的平台上呢？';
+}
+#menu:checked ~ label[for="menu_mg"]:before {
+  content: ' 代租代管（簡稱「代管」）是什麼？';
+}
+#menu:checked ~ label[for="menu_rt"]:before {
+  content: ' 包租包管（簡稱「包租」）是什麼？';
+}
+#menu:checked ~ label[for="menu_server"]:before {
+  content: ' 服務項目';
+}
+#menu:checked ~ label[for="menu_time"]:before {
+  content: ' 營業時間';
+}
+#menu:checked ~ label[for="menu_other"]:before {
+  content: ' 其他問題';
+}
+
+#menu:checked ~ .menu-wrapper {
+  max-height: 100%;
+  padding-bottom: 100px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+/* #foo-1 ~ .menu-wrapper label:after,
+#foo-2 ~ .menu-wrapper label:after,
+#foo-3 ~ .menu-wrapper label:after {
+  content: '';
+  color: #1EBCC3;
+} */
+
+
+.menu_bg label{
+  position: relative;
+    top: 36px;
+    padding: 14px 10px 10px 10px;
+    text-align: center;
+    line-height: normal;
+    color: #FFF;
+    font-family: IBM Plex Sans Devanagari;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.menu_bg{
+  width: 799px;
+  height: 159.14px;
+  background: #1EBCC3;;
+}
+/* #foo-1:checked ~ .menu-wrapper label[for="foo-1"],
+#foo-2:checked ~ .menu-wrapper label[for="foo-2"],
+#foo-3:checked ~ .menu-wrapper label[for="foo-3"] {
+  color: #ffffff;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*footer*/
+.footer{
+  width: 1920px;
+  height: 761px;
+  background: #FFD234;
+  position: relative;
+  
+  
+  }
+  .blue_ar_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  .blue_ar_email {
+  position: absolute; 
+  right: 520px; 
+  bottom: 200px;
+  /* border: 1px solid red;  */
+  
+  }
+  .blue_ar{
+  position: absolute; 
+  bottom: 0;
+  margin: 36px 353px 0px 974px;
+  width: 593px;
+  height: 724px;
+  background: #AEECEF;
+  border-radius: 593px 593px 0 0;
+  }
+  
+  .blue_ar_title{
+  font-family: 'open sans';
+  font-size: 40px;
+  font-weight: 700;
+  position: absolute;
+  left: 115px;
+  top:175px
+  }
+  .blue_ar_title>span{
+  display: block;
+  margin-top: 10px;
+  }
+  .blue_ar_email form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  }
+  
+  .blue_ar_email input[type="text"] {
+  width: 254px;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 61px; 
+  /* color: #1EBCC3; */
+  }
+  ::placeholder{
+  color: #1EBCC3;
+  }
+  /* Style the submit button */
+  .blue_ar_email input[type="submit"] {
+  width: 166px;
+  height: 62px;
+  padding: 10px;
+  margin: 5px;
+  background-color: #FFF;
+  color: #1EBCC3;
+  border: none;
+  border-radius: 61px; 
+  cursor: pointer;
+  }
+  .blue_ar_email input[value="SUBMIT"]{
+  font-family: 'open sans';
+  font-size: 20px;
+  }
+  .blue_ar_email input[name="email"]{
+  font-size: 20px;
+  padding-left: 50px;
+  
+  }
+  
+  
+  .footer_container{
+      position: absolute;
+      right: 1400px;
+      bottom: 300px;
+   
+  
+  }
+  
+  
+  .footer_link a{
+  /* margin: 299px 1388px 439px 255px  ; */
+  padding: 17px;
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Open Sans';
+  font-size: 30px;
+  font-weight: 700;
+  }
+  .line{
+  width: 515.633px;
+  border-bottom: 1px solid #000;
+  position: absolute;
+      left:390px;
+      bottom: 200px;
+  }
+  .tel , .address{
+  font-family: 'Zen Maru Gothic', sans-serif;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400; 
+  }
+  .footer_info{
+  position: absolute;
+  left:390px;
+  bottom: 60px;
+  }
+  .social_media_icon{
+  position: absolute;
+  left:750px;
+  bottom: 150px;
+  }
+  
+  .social_media_icon>a{
+  padding: 6px;
+  }

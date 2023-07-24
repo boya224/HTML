@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ 
+.wrap {
+    width: 1676.887px;
+    height: 100px;
+    border-radius: 100px;
+    background: rgba(30, 188, 195, 0.79);
+    margin: auto;
+
+  }
+ .menu{
+  margin: 68px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .menu li a {
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif,'M PLUS Rounded 1c', sans-serif,'Montserrat', sans-serif,'Caprasimo', 'cursive';
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  .header_bg > img{
+    width: 100%;
+    position: absolute;
+    background: #FFC700;
+    top: 0;
+    left: 0;
+    z-index: -2;
+
+  }
+  .header_bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 960px;
+    background-color: #FFC700;
+    width: 100%;
+    z-index: -3;
+  }
+  .header_bg span{
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 40px;
+    font-weight: 700;
+   
+  } 
+  .book-now{
+    width: 342px;
+    height: 62px;
+    background-color:#1EBCC3 ;
+    border-radius: 61px;
+  }
+  .book-now>a{
+    color: #FFF;
+    font-family: "Noto Sans";
+    font-weight: 700;
+    font-size:30px ;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  .we-are-gl{
+    align-items:flex-end
+  }
+  .we-are-gl-pic img{
+    position: relative;
+    z-index: 1;
+  }
+  .we-are-gl-pic::after{
+    content: "";
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 955px;
+    height: 960px;
+    background: #1EBCC3;
+  }
