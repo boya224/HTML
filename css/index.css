@@ -150,10 +150,12 @@ body {
     font-weight: 500;
     line-height: normal;
     margin-top: -4px;
+    padding-top: 35px;
 }
 
-.weare_txt{
-    padding-top: 35px;
+
+.weare_txt p{
+    line-height: 1.7;
 }
 
 .wellcome_txt{
@@ -391,33 +393,36 @@ body {
 }
 
 /*suitcase*/
-.suitcase_boy{
-    position: relative;
-    left: 1219px;
-    bottom: -25px;
-    z-index: 2;
-}
+/* */
 
 .suitcase{
-    position: relative;
-    bottom: 170px;
+    /* position: relative;
+    bottom: 170px; */
     height: 614.699px;
     background: #FFD234;
-    z-index: 1;
+    margin: 129px 0px 0px 0px;
 }
 
 .suitcase_sub{
     display: block;
     position: relative;
-    top: -635px;
-    left: 189px;
+    top: -775px;
+    left: 215px;
     z-index: 2;
 }
 .suitcase_path{
     display: block;
     position: relative;
-    top: -967px;
-    left: 785px;
+    bottom: -64px;
+    left: 883px;
+    margin: -1168px 0px 0px 100px;
+}
+
+
+.suitcase_boy{
+    position: relative;
+    left: 990px;
+    bottom: 737px;
     z-index: 2;
 }
 
@@ -428,9 +433,20 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+} 
+
+.chat{
+    position: relative;
+    bottom: 888px;
+    left: 942px;
+    z-index: 1;
 }
+
+
 .booking > p{
+    display: block;
     font-size: 16px;
+    margin-left: -35px;
 }
 
 .how{

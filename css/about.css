@@ -27,6 +27,8 @@ body {
   align-items: center;
   align-content: center;
   width: 65%;
+  transition: transform 0.5s;
+
   
 }
 
@@ -37,6 +39,13 @@ body {
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
+  transform: scale(1);
+  transition: transform 0.3s;
+
+}
+
+.nav_links a:hover{
+  transform: scale(1.2);
 }
 
 .header{
@@ -420,9 +429,9 @@ section .shared_space{
 }
 .benefit_txt_wrap {
   display: flex;
-  align-items: center; /* 垂直居中对齐 */
-  justify-content: center; /* 水平居中对齐 */
-  margin: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 30px 0px 4px;
 }
 .benefit_txt_wrap > * {
   margin: 0 5px;

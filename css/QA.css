@@ -67,6 +67,8 @@ margin-top:-10px ;
   align-items: center;
   align-content: center;
   width: 65%;
+  transition: transform 0.5s;
+
   
 }
 
@@ -77,6 +79,13 @@ margin-top:-10px ;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
+  transform: scale(1);
+  transition: transform 0.3s;
+
+}
+
+.nav_links a:hover{
+  transform: scale(1.2);
 }
 
 /*回首頁圈圈*/
@@ -282,12 +291,6 @@ label[for="menu_other"]:before {
   border-radius: 0px 0px 10px 10px;
 }
 
-/* #foo-1 ~ .menu-wrapper label:after,
-#foo-2 ~ .menu-wrapper label:after,
-#foo-3 ~ .menu-wrapper label:after {
-  content: '';
-  color: #1EBCC3;
-} */
 
 
 .menu_bg label{
@@ -309,48 +312,6 @@ label[for="menu_other"]:before {
   height: 159.14px;
   background: #1EBCC3;;
 }
-/* #foo-1:checked ~ .menu-wrapper label[for="foo-1"],
-#foo-2:checked ~ .menu-wrapper label[for="foo-2"],
-#foo-3:checked ~ .menu-wrapper label[for="foo-3"] {
-  color: #ffffff;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
