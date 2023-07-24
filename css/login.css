@@ -8,8 +8,6 @@
     overflow-x: hidden;
   }
   .nav {
-    margin: 0;
-    padding: 0;
     width: 1676.887px;
     height: 100px;
     border-radius: 100px;
@@ -19,8 +17,19 @@
     align-items: center;
     position: absolute;
     top: 50px;
-    right: 105px;
-    
+    right: 0px;
+    left: 0;
+    margin: auto;
+  }
+  
+  
+  
+  .nav_links {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
     
   }
   
@@ -35,9 +44,10 @@
   
   
   
-  .base_bg_blue{
+  .base_bg{
+    /* width:100%; */
     background: #AEECEF;
-
+    
   }
   
   
