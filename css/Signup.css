@@ -52,7 +52,7 @@ body {
 
 
 .base_bg_border{
-  background: url("/img/登入註冊背景.jpg") top center no-repeat;
+  background: url(/img/登入註冊背景.jpg) top center no-repeat;
   padding-top: 305px;
   /* padding-bottom: 386px; */
   margin-top: -101px;
