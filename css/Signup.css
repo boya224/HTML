@@ -69,7 +69,6 @@ body {
 .switch_btn .signup {
   display: block;
   width: 500px;
-  height: 50px;
   line-height: 20px;
   font-family: 'Noto Sans', sans-serif;
   font-size: 20px;
@@ -87,18 +86,19 @@ body {
     margin-right: 10px;
     border-radius: 50px 50px 0 0;
     position: relative;
-    top: 594px;
+    top: 604px;
     left: 959px;
+    padding: 10px 0 10px 0;
 }
 
 /* Styles for the "註冊" (Signup) button */
 .switch_btn .signup {
   background: #FFD234;
-
   border-radius: 50px 50px 0 0;
   position: relative;
   top: 544px;
   left: 458px;
+  padding: 10px 0 10px 0;
 }
 
 
@@ -161,9 +161,9 @@ body {
     padding: 25px;
 }
 
-.form-control{
+/* .form-control{
   text-align: start;
-}
+} */
 
 .control-label , .col-sm-4{
   color: #000;
@@ -183,7 +183,10 @@ body {
   border: 1px solid #1EBCC3;
 }
 
-
+.form-control[id="user_password"]{
+  position: relative;
+  left:20px;
+}
 form{
   display: flex;
   flex-direction: column;

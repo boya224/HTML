@@ -153,7 +153,7 @@ bottom: 260px;
 /*section*/
 
 
-/* .activity_title> span{
+.activity_title> span{
 margin-top: 70px;
 display: block;
 text-align: center;
@@ -162,7 +162,7 @@ font-size: 30px;
 font-style: normal;
 font-weight: 700;
 color: #000;
-} */
+}
 
 #topics_area{
 	margin:0 10px;

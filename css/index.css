@@ -11,7 +11,7 @@ body {
 }
 
 .header{
-  width: 1920px;
+  width: 100%;
   height: 960px;
   flex-shrink: 0;
   background: #FFC700;

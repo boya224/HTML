@@ -53,9 +53,9 @@
   
   .base_bg_border{
     background: url(/img/登入註冊背景.jpg) top center no-repeat;
-    padding-top: 305px;
-    padding-bottom: 386px;
-    margin-top: -101px;
+    padding-top: 51vh;
+    margin-bottom: 183px;
+    margin-top: -169px;
   }
   
   .switch_btn {
@@ -69,7 +69,7 @@
   .switch_btn .signup {
     display: block;
     width: 500px;
-    height: 50px;
+    /* height: 50px; */
     line-height: 20px;
     font-family: 'Noto Sans', sans-serif;
     font-size: 20px;
@@ -87,8 +87,9 @@
       margin-right: 10px;
       border-radius: 50px 50px 0 0;
       position: relative;
-      top: 594px;
+      top: 710px;
       left: 959px;
+      padding: 10px 0 10px 0;
   }
   
   /* Styles for the "註冊" (Signup) button */
@@ -97,8 +98,9 @@
     color: #C0C0C0;
     border-radius: 50px 50px 0 0;
     position: relative;
-    top: 543px;
+    top: 648px;
     left: 458px;
+    padding: 10px 0 10px 0;
     
   }
   
@@ -162,9 +164,7 @@
       padding: 25px;
   }
   
-  .form-control{
-    text-align: start;
-  }
+  
   
   .control-label , .col-sm-4{
     color: #000;
@@ -183,7 +183,15 @@
     height: 53.99px;
     border: 1px solid #1EBCC3;
   }
-  
+
+   .form-control[type="password"]{
+    position: relative;
+    left: 24px;
+  }
+
+  .checkbox-container label a{
+    text-decoration: none;
+  }
   
   form{
     display: flex;
