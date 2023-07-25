@@ -64,7 +64,7 @@ margin-top:-10px ;
   align-items: center;
   align-content: center;
   width: 65%;
-  
+  transition: transform 0.5s;
 }
 
 .nav_links a {
@@ -74,6 +74,13 @@ margin-top:-10px ;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+
+
+.nav_links a:hover{
+  transform: scale(1.2);
 }
 
 
