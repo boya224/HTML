@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>booknow</title>
-    <link rel="stylesheet" href="css/booknow.css">
+    <!-- <link rel="stylesheet" href="css/booknow.css"> -->
+    <link rel="stylesheet" href="css/2.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +14,434 @@
     <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=M+PLUS+Rounded+1c:wght@100&family=Montserrat:wght@500&family=Noto+Sans+TC&family=Noto+Sans:wght@700&family=Open+Sans:wght@700&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Hammersmith+One&family=M+PLUS+Rounded+1c:wght@100&family=Montserrat:wght@500&family=Noto+Sans+TC&family=Noto+Sans:wght@700;900&family=Open+Sans:wght@700&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
 </head>
-<body>
+
+<!----------程式碼參考租遇-->
+<body class="pages search zh-TW" data-locale ="zh-TW" data-mobile='false'>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVCLBPJ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  
+  
+
     <nav class="nav">
+      <div class="nav_links">
+          <a href="About.html">About</a>
+          <a href="Blog.html">Blog</a>
+          <a href="Activity.html">Activity</a>
+          <div class="nav_logo">
+              <a href="index.html"><img src="img/logo.svg" alt=""></a>
+          </div>
+          <a href="Q&A.html">Q&A</a>
+          <a href="Log in.html">Log in</a>
+          <a href="Sign up.html">Sign up</a>
+      </div>
+  </nav>
+
+  <div class="wrapper">
+    
+<div class="search-results-list js-search-results-list antialiased">
+  <div class="search-results-list__tabs">
+      <div id="tab-2" class="tab-content-result current">
+          <form class="search-form" id="house_search" action="/search" accept-charset="UTF-8" method="get">
+              <div class="col-md-12 tabs-result-container">
+                      <div class="row">
+<div class="col-md-6 col-sm-6 col-xs-12 ">
+  <select class="wide dropdown-room" name="q[city_cont_any]" id="q_city_cont_any"><option value="">不限城市</option>
+<option value="台北市">台北市</option>
+<option value="新北市">新北市</option>
+<option value="台中市">台中市</option>
+<option value="新竹市">新竹市</option>
+<option value="高雄市">高雄市</option>
+<option value="桃園市">桃園市</option></select>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12 ">
+  <select class="wide dropdown-room" data-load-path="/location_districts" name="q[district_cont_any]" id="q_district_cont_any"><option value="">不限區</option>
+</select>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12 ">
+  <select class="wide dropdown-room" name="q[rooms_room_type_eq]" id="q_rooms_room_type_eq"><option selected="selected" value="99">不限房型</option>
+<option value="3">整層住家</option>
+<option value="1">套房</option>
+<option value="2">雅房</option></select>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12 ">
+  <select class="wide dropdown-room" name="q[rooms_count_gteq]" id="q_rooms_count_gteq"><option data-display="不限房間數" value="99">不限房間數</option>
+<option selected="selected" value="1">一間</option>
+<option value="2">二間</option>
+<option value="3">三間</option>
+<option value="4">四間</option>
+<option value="5">五間</option>
+<option value="6">六間</option></select>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12">
+  <label style="font-size: 16px;" for="q_contracts_from_date_eq">入住日</label>
+  <input value="2023-07-25" class="form-control js-flatpickr input-arrow mb-3" placeholder="起租日期" autocomplete="off" data-flatpickr-min-date="today" type="date" name="q[contracts_from_date_eq]" id="q_contracts_from_date_eq" />
+</div>
+</div>
+<div class="row">
+<div class="col-md-9 col-sm-9 col-xs-9">
+  <ul class="list-inline text-center range-container">
+    <!-- <li class="pull-left">5000 NTD</li> -->
+    <li class='current_price_min pull-left'>NTD 3000</li>
+    <li class='current_price_max pull-right'>NTD 200000</li>
+    <!-- <li class="pull-right">50,000 NTD</li> -->
+  </ul>
+  <div class="col-md-12 bootstrap-slider">
+    <input id="q_prices" name='q[prices]' type="text" class="price-slider" data-slider-min="3000" data-slider-max="200000" data-slider-step="200" data-slider-value="[3000,200000]" data-slider-tooltip="hide" />
+    <input type='checkbox' value='true' class='hidden' id="q_search_by_prices" name='q[search_by_prices]' />
+  </div>
+</div>
+<div class="col-md-3 col-sm-3 col-xs-3">
+  <a href="javascript:void(0)" class="btn btn-zuyou-primary btn-lg js-btn-search">搜尋</a>
+</div>
+</div>
+
+<p style="margin-top: 15px;">為您找到 <strong style='font-size: 18px;'>185</strong> 間房屋，價格範圍為 NTD 4500 ~ 150000</p>
+
+              </div>
+</form>		</div>
+  </div>
+
+  <div class="search-results-list__houses">
+      <div class="house-card map-js-house-item" id="zuker-elite-apartment" data-house-id="572c1073-8cc3-43e3-807a-bfbd835f27f9" data-house-name="大園HOUSE">
+  <a class="house-cover-link" href="#">
+      <div class="house-img" style="background-image: url('/img/大園house.jpg');"></div>
+</a>	<div class="house-card__verfication-and-vote">
+      <!-- <span class='js-vote-btn' data-house-id="572c1073-8cc3-43e3-807a-bfbd835f27f9"> -->
+          <!-- <a rel="nofollow" data-method="post" href="/houses/572c1073-8cc3-43e3-807a-bfbd835f27f9/vote?remove_from_wish_list=false"><img style="width: 40px; padding: 10px 13px 13px 0px;" src="/assets/img/heart-empty-icon-2f6d031e18c3c872645c48adb86a9df03830d583e1091114570efa7582bbf60d.png" /></a> -->
+      </span>
+  </div>
+  <div class="house-title-and-basic">
+      <!-- <a onclick="var e=document.getElementById(&#39;zuker-elite-apartment&#39;);e.id=&#39;&#39;;location.hash=&#39;zuker-elite-apartment&#39;;e.id=&#39;zuker-elite-apartment&#39;" href="/houses/zuker-elite-apartment"> -->
+          <h4 class="house-title">大園HOUSE&nbsp;</h4>
+</a>
+      <div class="house-basic">
+          <div class="house-basic__icon-text house-basic__icon-text--short">
+              <img class="house-basic__icon" style="" src="img/樓層.svg" />
+              17F / 18F
+          </div>
+
+          <div class="house-basic__icon-text house-basic__icon-text--short">
+              <img class="house-basic__icon" style="" src="img/坪數.svg" />
+              303 坪
+          </div>
+
+          <div class="house-basic__icon-text house-basic__icon-text--short">
+              <img class="house-basic__icon" style="" src="img/房間數.svg"/> 37 房間
+          </div>
+
+          <div class="house-basic__icon-text house-basic__icon-text--long">
+              <img class="house-basic__icon" style="" src="img/衛浴.svg" /> 0 衛浴
+          </div>
+
+          <div class="house-basic__icon-text">
+              <img class="house-basic__icon" src="img/價錢.svg" />
+              NT$17000~30000 / 月
+          </div>
+      </div>
+      
+  </div>
+</div>
+
+
+<div class="house-card map-js-house-item" id="xiao-bei-lab-2f" data-house-id="d4e45382-4109-429f-a986-5b8b6e16c12c" data-house-name="">
+  <a class="house-cover-link" onclick="var e=document.getElementById(&#39;xiao-bei-lab-2f&#39;);e.id=&#39;&#39;;location.hash=&#39;xiao-bei-lab-2f&#39;;e.id=&#39;xiao-bei-lab-2f&#39;" href="/houses/xiao-bei-lab-2f">
+      <div class="house-img" style="background-image: url('/img/中壢HOUSE.jpg');"></div>
+</a>	<div class="house-card__verfication-and-vote">
+      <span class='js-vote-btn' data-house-id="d4e45382-4109-429f-a986-5b8b6e16c12c">
+          <a rel="nofollow" data-method="post" href="/houses/d4e45382-4109-429f-a986-5b8b6e16c12c/vote?remove_from_wish_list=false"><img style="width: 40px; padding: 10px 13px 13px 0px;" src="/assets/img/heart-empty-icon-2f6d031e18c3c872645c48adb86a9df03830d583e1091114570efa7582bbf60d.png" /></a>
+      </span>
+  </div>
+  <div class="house-title-and-basic">
+      <a onclick="var e=document.getElementById(&#39;xiao-bei-lab-2f&#39;);e.id=&#39;&#39;;location.hash=&#39;xiao-bei-lab-2f&#39;;e.id=&#39;xiao-bei-lab-2f&#39;" href="/houses/xiao-bei-lab-2f">
+          <h4 class="house-title">中壢HOUSE</h4>
+</a>
+          <div class="house-basic">
+              <div class="house-basic__icon-text house-basic__icon-text--short">
+                  <img class="house-basic__icon" style="" src="img/樓層.svg" />
+                  17F / 18F
+              </div>
+
+              <div class="house-basic__icon-text house-basic__icon-text--short">
+                  <img class="house-basic__icon" style="" src="img/坪數.svg" />
+                  303 坪
+              </div>
+
+              <div class="house-basic__icon-text house-basic__icon-text--short">
+                  <img class="house-basic__icon" style="" src="img/房間數.svg"/> 37 房間
+              </div>
+
+              <div class="house-basic__icon-text house-basic__icon-text--long">
+                  <img class="house-basic__icon" style="" src="img/衛浴.svg" /> 0 衛浴
+              </div>
+
+              <div class="house-basic__icon-text">
+                  <img class="house-basic__icon" src="img/價錢.svg" />
+                  NT$17000~30000 / 月
+              </div>
+          </div>
+      
+  </div>
+</div><div class="house-card map-js-house-item" id="minquan-42lab" data-house-id="bb4f5bf3-33f0-435f-93f8-6cfbae8bf403" data-house-name="">
+  <a class="house-cover-link" onclick="var e=document.getElementById(&#39;minquan-42lab&#39;);e.id=&#39;&#39;;location.hash=&#39;minquan-42lab&#39;;e.id=&#39;minquan-42lab&#39;" href="/houses/minquan-42lab">
+      <div class="house-img" style="background-image: url('/img/林口HOUSE.jpg');"></div>
+</a>	<div class="house-card__verfication-and-vote">
+      <span class='js-vote-btn' data-house-id="bb4f5bf3-33f0-435f-93f8-6cfbae8bf403">
+          <a rel="nofollow" data-method="post" href="/houses/bb4f5bf3-33f0-435f-93f8-6cfbae8bf403/vote?remove_from_wish_list=false"><img style="width: 40px; padding: 10px 13px 13px 0px;" src="/assets/img/heart-empty-icon-2f6d031e18c3c872645c48adb86a9df03830d583e1091114570efa7582bbf60d.png" /></a>
+      </span>
+  </div>
+  <div class="house-title-and-basic">
+      <a onclick="var e=document.getElementById(&#39;minquan-42lab&#39;);e.id=&#39;&#39;;location.hash=&#39;minquan-42lab&#39;;e.id=&#39;minquan-42lab&#39;" href="/houses/minquan-42lab">
+          <h4 class="house-title">林口HOUSE</h4>
+</a>
+      <div class="house-basic">
+          <div class="house-basic__icon-text house-basic__icon-text--short">
+              <img class="house-basic__icon" style="" src="img/樓層.svg" />
+              17F / 18F
+          </div>
+
+          <div class="house-basic__icon-text house-basic__icon-text--short">
+              <img class="house-basic__icon" style="" src="img/坪數.svg" />
+              303 坪
+          </div>
+
+          <div class="house-basic__icon-text house-basic__icon-text--short">
+              <img class="house-basic__icon" style="" src="img/房間數.svg"/> 37 房間
+          </div>
+
+          <div class="house-basic__icon-text house-basic__icon-text--long">
+              <img class="house-basic__icon" style="" src="img/衛浴.svg" /> 0 衛浴
+          </div>
+
+          <div class="house-basic__icon-text">
+              <img class="house-basic__icon" src="img/價錢.svg" />
+              NT$17000~30000 / 月
+          </div>
+      </div>
+      
+  </div>
+</div><div class="house-card map-js-house-item" id="dadaocheng-lab" data-house-id="6d5bcc85-6a47-4439-a804-bea9471b1b30" data-house-name="">
+  <a class="house-cover-link" onclick="var e=document.getElementById(&#39;dadaocheng-lab&#39;);e.id=&#39;&#39;;location.hash=&#39;dadaocheng-lab&#39;;e.id=&#39;dadaocheng-lab&#39;" href="/houses/dadaocheng-lab">
+      <div class="house-img" style="background-image: url('/img/平鎮HOUSE.jpg');"></div>
+</a>	<div class="house-card__verfication-and-vote">
+      <span class='js-vote-btn' data-house-id="6d5bcc85-6a47-4439-a804-bea9471b1b30">
+          <a rel="nofollow" data-method="post" href="/houses/6d5bcc85-6a47-4439-a804-bea9471b1b30/vote?remove_from_wish_list=false"><img style="width: 40px; padding: 10px 13px 13px 0px;" src="/assets/img/heart-empty-icon-2f6d031e18c3c872645c48adb86a9df03830d583e1091114570efa7582bbf60d.png" /></a>
+      </span>
+  </div>
+  <div class="house-title-and-basic">
+      <a onclick="var e=document.getElementById(&#39;dadaocheng-lab&#39;);e.id=&#39;&#39;;location.hash=&#39;dadaocheng-lab&#39;;e.id=&#39;dadaocheng-lab&#39;" href="/houses/dadaocheng-lab">
+          <h4 class="house-title">平鎮HOUSE</h4>
+</a>
+      <div class="house-basic">
+          <div class="house-basic__icon-text house-basic__icon-text--short">
+              <img class="house-basic__icon" style="" src="img/樓層.svg" />
+              17F / 18F
+          </div>
+
+          <div class="house-basic__icon-text house-basic__icon-text--short">
+              <img class="house-basic__icon" style="" src="img/坪數.svg" />
+              303 坪
+          </div>
+
+          <div class="house-basic__icon-text house-basic__icon-text--short">
+              <img class="house-basic__icon" style="" src="img/房間數.svg"/> 37 房間
+          </div>
+
+          <div class="house-basic__icon-text house-basic__icon-text--long">
+              <img class="house-basic__icon" style="" src="img/衛浴.svg" /> 0 衛浴
+          </div>
+
+          <div class="house-basic__icon-text">
+              <img class="house-basic__icon" src="img/價錢.svg" />
+              NT$17000~30000 / 月
+          </div>
+      </div>
+      
+  </div>
+</div><div class="house-card map-js-house-item" id="east-lab" data-house-id="86751bcf-83ee-4593-b839-25747c31244a" data-house-name="">
+  <a class="house-cover-link" onclick="var e=document.getElementById(&#39;east-lab&#39;);e.id=&#39;&#39;;location.hash=&#39;east-lab&#39;;e.id=&#39;east-lab&#39;" href="/houses/east-lab">
+      <div class="house-img" style="background-image: url('/img/內壢HOUSE.jpg');"></div>
+</a>	<div class="house-card__verfication-and-vote">
+      <span class='js-vote-btn' data-house-id="86751bcf-83ee-4593-b839-25747c31244a">
+          <a rel="nofollow" data-method="post" href="/houses/86751bcf-83ee-4593-b839-25747c31244a/vote?remove_from_wish_list=false"><img style="width: 40px; padding: 10px 13px 13px 0px;" src="/assets/img/heart-empty-icon-2f6d031e18c3c872645c48adb86a9df03830d583e1091114570efa7582bbf60d.png" /></a>
+      </span>
+  </div>
+  <div class="house-title-and-basic">
+      <a onclick="var e=document.getElementById(&#39;east-lab&#39;);e.id=&#39;&#39;;location.hash=&#39;east-lab&#39;;e.id=&#39;east-lab&#39;" href="/houses/east-lab">
+          <h4 class="house-title">內壢HOUSE</h4>
+</a>
+      <div class="house-basic">
+          <div class="house-basic__icon-text house-basic__icon-text--short">
+              <img class="house-basic__icon" style="" src="img/樓層.svg" />
+              17F / 18F
+          </div>
+
+          <div class="house-basic__icon-text house-basic__icon-text--short">
+              <img class="house-basic__icon" style="" src="img/坪數.svg" />
+              303 坪
+          </div>
+
+          <div class="house-basic__icon-text house-basic__icon-text--short">
+              <img class="house-basic__icon" style="" src="img/房間數.svg"/> 37 房間
+          </div>
+
+          <div class="house-basic__icon-text house-basic__icon-text--long">
+              <img class="house-basic__icon" style="" src="img/衛浴.svg" /> 0 衛浴
+          </div>
+
+          <div class="house-basic__icon-text">
+              <img class="house-basic__icon" src="img/價錢.svg" />
+              NT$17000~30000 / 月
+          </div>
+      </div>
+      
+  </div>
+</div><div class="house-card map-js-house-item" id="shuanglian-lab" data-house-id="66ce4411-bcba-46c4-ab8c-b26999f47706" data-house-name="">
+  <a class="house-cover-link" onclick="var e=document.getElementById(&#39;shuanglian-lab&#39;);e.id=&#39;&#39;;location.hash=&#39;shuanglian-lab&#39;;e.id=&#39;shuanglian-lab&#39;" href="/houses/shuanglian-lab">
+      <div class="house-img" style="background-image: url('/img/觀音HOUSE.jpg');"></div>
+</a>	<div class="house-card__verfication-and-vote">
+      <span class='js-vote-btn' data-house-id="66ce4411-bcba-46c4-ab8c-b26999f47706">
+          <a rel="nofollow" data-method="post" href="/houses/66ce4411-bcba-46c4-ab8c-b26999f47706/vote?remove_from_wish_list=false"><img style="width: 40px; padding: 10px 13px 13px 0px;" src="/assets/img/heart-empty-icon-2f6d031e18c3c872645c48adb86a9df03830d583e1091114570efa7582bbf60d.png" /></a>
+      </span>
+  </div>
+  <div class="house-title-and-basic">
+      <a onclick="var e=document.getElementById(&#39;shuanglian-lab&#39;);e.id=&#39;&#39;;location.hash=&#39;shuanglian-lab&#39;;e.id=&#39;shuanglian-lab&#39;" href="/houses/shuanglian-lab">
+          <h4 class="house-title">觀音HOUSE</h4>
+</a>
+      <div class="house-basic">
+          <div class="house-basic__icon-text house-basic__icon-text--short">
+              <img class="house-basic__icon" style="" src="img/樓層.svg" />
+              17F / 18F
+          </div>
+
+          <div class="house-basic__icon-text house-basic__icon-text--short">
+              <img class="house-basic__icon" style="" src="img/坪數.svg" />
+              303 坪
+          </div>
+
+          <div class="house-basic__icon-text house-basic__icon-text--short">
+              <img class="house-basic__icon" style="" src="img/房間數.svg"/> 37 房間
+          </div>
+
+          <div class="house-basic__icon-text house-basic__icon-text--long">
+              <img class="house-basic__icon" style="" src="img/衛浴.svg" /> 0 衛浴
+          </div>
+
+          <div class="house-basic__icon-text">
+              <img class="house-basic__icon" src="img/價錢.svg" />
+              NT$17000~30000 / 月
+          </div>
+      </div>
+      
+  </div>
+</div>
+
+      <div class="text-center" style="margin-top: 30px; margin-bottom: 30px;">  <ul class="pagination">
+  
+        <li class='active'><a remote="false">1</a></li>
+
+        <li>
+          <a rel="next" href="#">2</a></li>
+
+        <li>
+          <a href="#">3</a>
+    </li>
+
+      <li class='disabled'>
+            <a>&hellip;</a>
+  </li>
+
+  <li>
+        <a rel="next" href="#">下一頁 &rsaquo;</a>
+  </li>
+
+  <li>
+<a href="#">最後面 &raquo;</a>
+</li>
+
+</ul>
+</div>
+  </div>
+  
+  <!-----------footer-->
+  <!-- <footer>
+      <div class="footer">
+          <div class="footer_container">
+              <div class="footer_link">
+              <a href="About.html">About</a>
+              <a href="Blog.html">Blog</a>
+              <a href="Activity.html">Activity</a>
+              <a href="Q&A.html">Q&A</a>
+          </div>
+          
+          </div>
+          <div class="blue_ar_container">
+          <div class="blue_ar">
+              <div class="blue_ar_title">Collaboration <span>Contact us</span></div>
+          </div>
+          <div class="blue_ar_email">
+              <form>
+                  <div class="placeholder_bg">
+                      <input type="text" placeholder="Your email" name="email">
+                  </div>
+                  <input type="submit" value="SUBMIT">
+              </form>
+          </div></div>
+  
+          <div class="line"></div>
+          <div class="social_media_icon">
+              <a href="#"><img src="img/fb social mediacon.svg" alt=""></a>
+              <a href="#"><img src="img/ig social mediacon.svg" alt=""></a>
+              <a href="#"><img src="img/twsocial mediacon.svg" alt=""></a>
+              <a href="#"><img src="img/ytbsocial mediacon.svg" alt=""></a>
+          </div>
+          <div class="footer_info">
+              <div class="tel">電話: 03-425-1108</div>
+          <div class="address">地址: 桃園市中壢區復興路46號9樓</div>
+          </div>
+          
+      
+    </footer> -->
+</div>
+
+  <div class="search-results-map hidden-xs">
+      <div id="map" data-height="100%">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2490359444937!2d121.22244777602062!3d24.95764034136084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ea50c732a5%3A0x1b5e6ee66e9fec49!2z57ev6IKyVGliYU1l6ZmE6Kit5Lit5aOi6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1690290435730!5m2!1szh-TW!2stw" width="1141" height="881" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+      </div>
+      
+  </div>
+
+<!-- <script>
+  $(function() {
+      handleSearchForm();
+
+      if($("#q_city_cont_any").val() != null) {
+          $("#q_city_cont_any").trigger('change') // 為了透過 handleDistrictsDropDownList() 取得「區」的選項
+      }
+  })
+  $(window).on('pageshow', function(){
+      if (location.hash) {
+          // 如果有支援原生滾動則啟用，否則就依賴 hash 自動置頂的機制。
+          if ('scrollBehavior' in document.documentElement.style) {
+              console.log("pure js scroll enabled")
+              document.querySelector(location.hash).scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+              });
+          } else if (window.isMobile.any()) {
+              var old_hash = location.hash
+              console.log(location.hash)
+              location.hash = '#non-existing-id'
+              location.hash = old_hash
+          }
+      }
+  })
+</script> -->
+
+<!-- <style type="text/css">
+<!-- <body> -->
+    <!-- <nav class="nav">
         <div class="nav_links">
             <a href="About.html">About</a>
             <a href="Blog.html">Blog</a>
@@ -98,12 +525,12 @@
     <a href="Activity.html">
         <div class="item"><img src="img/回最上層.png"></div>
     </a>
-</div>
+</div> -->
 
 
 
        <!-----------footer-->
-       <footer>
+       <!-- <footer>
         <div class="footer">
             <div class="footer_container">
                 <div class="footer_link">
@@ -140,7 +567,7 @@
             </div>
             
         
-      </footer>
+      </footer> -->
 
-</body>
+<!-- </body> -->
 </html>
