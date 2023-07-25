@@ -157,219 +157,256 @@ font-weight: 700;
 color: #000;
 } */
 
-/* dt ~ dd{
-  font-family: Open Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;  
-} */
+#topics_area{
+	margin:0 10px;
+}
+ #topics_area .topics_year{
+	/* border-bottom:1px solid #ccc; */
+	margin-bottom: 56px;
+}
+ #topics_area .topics_year dt, .topics_year dd{
+	float:left;
+	padding:0;
+	height:42px;
+	color:#333;
+}
+ #topics_area .topics_year dt{
+	font-size:18px;
+	font-weight: bold;
+	color:#000000;
+	letter-spacing:0.2em;
+	width:95px;
+	text-align:center;
+	background: url(/img/dash活動.svg) no-repeat right top;
+	margin-right: 15px;
+	padding-top:5px;
+}
+ #topics_area .topics_year dd{
+	width:66px;
+	background:url(/img/活動直線.svg) no-repeat right top;
+	text-align:center;
+	font-size:16px;
+}
+ #topics_area .topics_year dd:last-child{
+	width:66px;
+	background:none;
+	text-align:center;
+	font-size:16px;
+}
+ #topics_area .topics_year dd:hover{
+	display:block;
+	background:url(/img/活動對話.png) no-repeat center top;
+	color:#fff;
+}
+ #topics_area .topics_year dd.active{
+	display:block;
+	/* height: 37px; */
+	/* padding-top: 5px; */
+	background:url(/img/活動直線.svg) no-repeat center top;
+	color:#fff;
+}
+ #topics_area .topics_year dd.active a{
+	display:block;
+	margin:0;
+	padding:0;
+	color:#000000;
+}
+ #topics_area .topics_year dd a{
+	display: block;
+	text-decoration: none;
+	height: 37px;
+	padding-top: 5px;
+}
+ #topics_area .topics_year dd a:hover{
+	color:#fff;
+	text-decoration: none;
+}
 
-/* dl ,dd,  a{
+ #topics_area .topics_month{
+	margin-bottom: 125px;
+}
+ #topics_area .topics_month dt, .topics_month dd{
+	float:left;
+	padding:0;
+	height:42px;
+	color:#333;
+}
+ #topics_area .topics_month dt{
+	font-size:18px;
+	font-weight: bold;
+	color:#000000;
+	width:95px;
+	text-align:center;
+	background: url(/img/dash活動.svg) no-repeat right top;
+	/* margin-right: 15px;
+	padding-top:5px; */
+}
+ #topics_area .topics_month dd{
+	width:66px;
+	background:url(/img/活動直線.svg) no-repeat right top;
+	text-align:center;
+	font-size:16px;
+}
+ #topics_area .topics_month dd:last-child{
+	width:66px;
+	background:none;
+	text-align:center;
+	font-size:16px;
+}
+ #topics_area .topics_month dd:hover{
+	display:block;
+	background:url(/img/活動對話.png) no-repeat center top;
+	color:#fff;
+}
+ #topics_area .topics_month dd.active{
+	display:block;
+	height: 37px;
+	padding-top: 5px;
+	background:url(/images/topics/common/topics_active.png) no-repeat center top;
+	color:#fff;
+}
+ #topics_area .topics_month dd.active a{
+	display:block;
+	margin:0;
+	padding:0;
+	color:#000000;
   text-decoration: none;
-  color: #1EBCC3;
-} */
+}
+  .topics_month dd a{
+	display: block;
+	text-decoration: none;
+	height: 37px;
+	padding-top: 5px;
+}
+ .topics_month dd a:hover{
+	color:#fff;
+	text-decoration: none;
+}
 
-/* .topics_year>dl>dt{
-   color: #000;
-  font-family: 'Open Sans';
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 4.2px;
-} */
 
-/* .topics_month>dl>dt{
+ #topics_area table.topics_deta{
+	border-collapse: collapse;
+	width:100%;
+	margin-bottom:20px;
+}
+ #topics_area table.topics_deta tr:nth-child(even){
+	background:#fff;
+}
+ #topics_area table.topics_deta tr:nth-child(odd){
+	background:#F6F6F6;
+}
+ #topics_area table.topics_deta tr.pressline:hover{
+	background:#E5ECF3;
+}
+ #topics_area table.topics_deta tr.medialine:hover{
+	background:#FFEEE5;
+}
+ #topics_area table.topics_deta tr.infoline:hover{
+	background:#E5F0F1;
+}
+ #topics_area table.topics_deta td{
+	padding:15px 0;
+}
+ #topics_area table.topics_deta td.topics_date{
+	width:85px;
+	padding-left: 15px;
+    color: #000;
+    font-family: Hubballi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+ #topics_area table.topics_deta td.topics_category{
+	width:120px;
+	padding:10px 10px;
+	text-align:center;
+	color:#fff;
+}
+ #topics_area table.topics_deta td.topics_category .residents{
+    width: 219px;
+    font-size: 12px;
+    display: block;
+    padding: 1px 0;
+    margin: 0 0 5px 0;
+    border-radius: 10px;
+    background: #FFD234;
+    color: #FFF;
+    font-family: IBM Plex Sans Devanagari;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.225px;
+}
+ #topics_area table.topics_deta td.topics_category .property{
+    font-size: 12px;
+    width: 200px;
+    display: block;
+    padding: 1px 10px;
+    margin: 0 0 5px 0;
+    border-radius: 10px;
+    background: #AEECEF;
+    color: #009198;
+    font-family: IBM Plex Sans Devanagari;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.225px;
+}
+
+ #topics_area table.topics_deta td.topics_category .anyone{
+    font-size: 12px;
+    width: 218px;
+    display: block;
+    padding: 1px 0;
+    font-size: 12px;
+    margin: 0 0 5px 0;
+    border-radius: 10px;
+    background: #1EBCC3;
+    color: #FFF;
+    font-family: 'IBM Plex Sans Devanagari';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.225px;
+}
+ #topics_area table.topics_deta td.topics_title{
+	padding:0 15px;
+}
+ #topics_area table.topics_deta td.topics_title:before{
+	content:url('/img/活動table按鈕.svg');
+	display:inline-block;
+	vertical-align: middle;
+}
+
+.topics_title a{
+  text-decoration: none;
   color: #000;
-  font-family: 'Open Sans';
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 4.2px;
-} */
-
-/*年月橫排*/
-
-.topics_year dl , .topics_month dl {
-  display: flex;
-  align-items: center;
-}
-
-
-
-
-/* .topics_year dl,
-.topics_year dd {
-margin: 0;
-padding: 0;
-list-style: none;
-padding: 0 40px;
-} */
-
-
-/* .topics_year dd {
-margin-right: 10px;
-} */
-
-/* .topics_month dl {
-display: flex;
-align-items: center;
-padding: 0;
-} */
-
-/* .topics_month dl,
-.topics_month dd {
-  margin: auto;
-  padding: 0 40px;
-} */
-
-/* .topics_month dd {
- margin-right: 10px;
-} */
-
- /* .dash{
-  border-right:1px dashed #000;
-}  */
-
-
-
-
-
-.topics_deta.pressline{
-  padding:20px;
-}
-
-
-
-.residents{
-  display: block;
-  display: flex;
-  align-content: center;
-  position: relative;
-  z-index: 1;
-  color: #FFF;
-  font-family: 'IBM Plex Sans Devanagari',"Open Sans";
-  font-size: 15px;
+  font-family:'IBM Plex Sans Devanagari';
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 0.225px;
-}
-
-.residents::after{
-  content: '';
-  position: relative;
-  width: 198.743px;
-  height: 29.631px;
-  border-radius: 10px;
-  background: #1EBCC3;
-  left: -194px;
-  top: -7px;
-  z-index: -1;  
-}
-
-td .property  {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  color: #009198;
-  font-family:"IBM Plex Sans Devanagari","Open Sans" ;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.225px;
+  padding: 10px;
 }
 
 
-td .property::after{
-  content: '';
-  position: relative;
-  width: 198.743px;
-  height: 29.631px;
-  border-radius: 10px;
-  background: #AEECEF;
-  left: -194px;
-  top: -7px;
-  z-index: -1;  
-  top: -4px;
-  left: -146px;
+#topics_area{
+      margin: auto;
+      padding-top: 130px;
+      max-width: 150vh;
 }
 
-.anyone{
-  position: relative;
-  display: flex;
-  margin: 16px 0px 5px 61px;
-  color: #FFF;
-  font-family: 'IBM Plex Sans Devanagari';
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.225px;
+.activity_doc{
+    position: relative;
+    top: -3px;
+    left: 272px;
+    transform: scale(.7);
 }
-
-.anyone::after{
-  content: '';
-  position: relative;
-  width: 198.743px;
-  height: 29.631px;
-  border-radius: 10px;
-  background: #FFD234;
-  z-index: -1;  
-  top: -4px;
-  left: -134px;
-}
-
-
-.pressline:nth-child(odd){
-  background: rgba(210, 210, 210, 0.23); 
-}
-
-.pressline{
-
-}
-
-.topics_date{ 
- padding:20px 300px 20px 30px;
  
-}
-
-
-.topics_category:nth-child(even){
- 
-}
-
-.topics_title img{
-  vertical-align: middle;
-}
-
-
-/*置中*/
-.section_area {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.topics_area {
-  margin: auto;
-}
-
-.activity_doc {
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  height: 360px;
-  margin: 0 0 80px 0;
-}
-
-
-
-
-
 
 
 
