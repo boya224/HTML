@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/booktest.css">
+</head>
+<body>
+
+    <div class="wrapper">
+      
+        <div class="search-results-list js-search-results-list antialiased">
+            <div class="search-results-list__tabs">
+                <div id="tab-2" class="tab-content-result current">
+                    <form class="search-form" id="house_search" action="/search" accept-charset="UTF-8" method="get">
+                        <div class="col-md-12 tabs-result-container">
+                                <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12 ">
+            <select class="wide dropdown-room" name="q[city_cont_any]" id="q_city_cont_any"><option value="">不限城市</option>
+                <option value="台北市">台北市</option>
+                <option value="新北市">新北市</option>
+                <option value="台中市">台中市</option>
+                <option value="新竹市">新竹市</option>
+                <option value="高雄市">高雄市</option>
+                <option value="桃園市">桃園市</option>
+            </select>
+          </div>
+
+          <div class="col-md-6 col-sm-6 col-xs-12 ">
+            <select class="wide dropdown-room" data-load-path="/location_districts" name="q[district_cont_any]" id="q_district_cont_any"><option value="">不限區</option>
+        </select>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12 ">
+            <select class="wide dropdown-room" name="q[rooms_room_type_eq]" id="q_rooms_room_type_eq"><option selected="selected" value="99">不限房型</option>
+        <option value="3">整層住家</option>
+        <option value="1">套房</option>
+        <option value="2">雅房</option></select>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12 ">
+            <select class="wide dropdown-room" name="q[rooms_count_gteq]" id="q_rooms_count_gteq"><option data-display="不限房間數" value="99">不限房間數</option>
+        <option selected="selected" value="1">一間</option>
+        <option value="2">二間</option>
+        <option value="3">三間</option>
+        <option value="4">四間</option>
+        <option value="5">五間</option>
+        <option value="6">六間</option></select>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <label style="font-size: 16px;" for="q_contracts_from_date_eq">入住日</label>
+            <input value="2023-07-25" class="form-control " placeholder="起租日期" autocomplete="off" data-flatpickr-min-date="today" type="date" name="q[contracts_from_date_eq]" id="q_contracts_from_date_eq" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-9 col-sm-9 col-xs-9">
+            <ul class="list-inline text-center range-container">
+              <li class='current_price_min pull-left'>NTD 3000</li>
+              <li class='current_price_max pull-right'>NTD 200000</li>
+            </ul>
+
+            <div class="col-md-12 bootstrap-slider">
+              <input id="q_prices" name='q[prices]' type="text" class="price-slider" data-slider-min="3000" data-slider-max="200000" data-slider-step="200" data-slider-value="[3000,200000]" data-slider-tooltip="hide" />
+              <input type='checkbox' value='true' class='hidden' id="q_search_by_prices" name='q[search_by_prices]' />
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-3 col-xs-3">
+            <a href="#" class="btn-search">搜尋</a>
+          </div>
+        </div>
+        
+        
+        
+
+        
+
+
+
+        <div class="card">
+            <div class="card-image">
+                <img src="img/大園house.jpg" class="da" alt="House Image">
+            </div>
+            <div class="card-content">
+                <h4 class="house-title">
+                    中壢HOUSE
+                </h4>
+                <div class="house-basic">
+                    <div class="house-basic__icon-text house-basic__icon-text--short">
+                        <img class="house-basic__icon" src="img/樓層.svg" alt="樓層" />
+                        2F / 3F
+                    </div>
+        
+                    <div class="house-basic__icon-text house-basic__icon-text--short">
+                        <img class="house-basic__icon" src="img/坪數.svg" alt="坪數" />
+                        6 坪
+                    </div>
+        
+                    <div class="house-basic__icon-text house-basic__icon-text--short">
+                        <img class="house-basic__icon" src="img/房間數.svg" alt="房間數" /> 4 房間
+                    </div>
+        
+                    <div class="house-basic__icon-text house-basic__icon-text--long">
+                        <img class="house-basic__icon" src="img/衛浴.svg" alt="衛浴" /> 4 衛浴
+                    </div>
+        
+                    <div class="house-basic__icon-text">
+                        <img class="house-basic__icon" src="img/價錢.svg" alt="價錢" />
+                        NT$10000~11000 / 月
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="img/大園house.jpg" class="da" alt="House Image">
+            </div>
+            <div class="card-content">
+                <h4 class="house-title">
+                    中壢HOUSE
+                </h4>
+                <div class="house-basic">
+                    <div class="house-basic__icon-text house-basic__icon-text--short">
+                        <img class="house-basic__icon" src="img/樓層.svg" alt="樓層" />
+                        2F / 3F
+                    </div>
+        
+                    <div class="house-basic__icon-text house-basic__icon-text--short">
+                        <img class="house-basic__icon" src="img/坪數.svg" alt="坪數" />
+                        6 坪
+                    </div>
+        
+                    <div class="house-basic__icon-text house-basic__icon-text--short">
+                        <img class="house-basic__icon" src="img/房間數.svg" alt="房間數" /> 4 房間
+                    </div>
+        
+                    <div class="house-basic__icon-text house-basic__icon-text--long">
+                        <img class="house-basic__icon" src="img/衛浴.svg" alt="衛浴" /> 4 衛浴
+                    </div>
+        
+                    <div class="house-basic__icon-text">
+                        <img class="house-basic__icon" src="img/價錢.svg" alt="價錢" />
+                        NT$10000~11000 / 月
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="img/大園house.jpg" class="da" alt="House Image">
+            </div>
+            <div class="card-content">
+                <h4 class="house-title">
+                    中壢HOUSE
+                </h4>
+                <div class="house-basic">
+                    <div class="house-basic__icon-text house-basic__icon-text--short">
+                        <img class="house-basic__icon" src="img/樓層.svg" alt="樓層" />
+                        2F / 3F
+                    </div>
+        
+                    <div class="house-basic__icon-text house-basic__icon-text--short">
+                        <img class="house-basic__icon" src="img/坪數.svg" alt="坪數" />
+                        6 坪
+                    </div>
+        
+                    <div class="house-basic__icon-text house-basic__icon-text--short">
+                        <img class="house-basic__icon" src="img/房間數.svg" alt="房間數" /> 4 房間
+                    </div>
+        
+                    <div class="house-basic__icon-text house-basic__icon-text--long">
+                        <img class="house-basic__icon" src="img/衛浴.svg" alt="衛浴" /> 4 衛浴
+                    </div>
+        
+                    <div class="house-basic__icon-text">
+                        <img class="house-basic__icon" src="img/價錢.svg" alt="價錢" />
+                        NT$10000~11000 / 月
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="img/大園house.jpg" class="da" alt="House Image">
+            </div>
+            <div class="card-content">
+                <h4 class="house-title">
+                    中壢HOUSE
+                </h4>
+                <div class="house-basic">
+                    <div class="house-basic__icon-text house-basic__icon-text--short">
+                        <img class="house-basic__icon" src="img/樓層.svg" alt="樓層" />
+                        2F / 3F
+                    </div>
+        
+                    <div class="house-basic__icon-text house-basic__icon-text--short">
+                        <img class="house-basic__icon" src="img/坪數.svg" alt="坪數" />
+                        6 坪
+                    </div>
+        
+                    <div class="house-basic__icon-text house-basic__icon-text--short">
+                        <img class="house-basic__icon" src="img/房間數.svg" alt="房間數" /> 4 房間
+                    </div>
+        
+                    <div class="house-basic__icon-text house-basic__icon-text--long">
+                        <img class="house-basic__icon" src="img/衛浴.svg" alt="衛浴" /> 4 衛浴
+                    </div>
+        
+                    <div class="house-basic__icon-text">
+                        <img class="house-basic__icon" src="img/價錢.svg" alt="價錢" />
+                        NT$10000~11000 / 月
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="img/大園house.jpg" class="da" alt="House Image">
+            </div>
+            <div class="card-content">
+                <h4 class="house-title">
+                    中壢HOUSE
+                </h4>
+                <div class="house-basic">
+                    <div class="house-basic__icon-text house-basic__icon-text--short">
+                        <img class="house-basic__icon" src="img/樓層.svg" alt="樓層" />
+                        2F / 3F
+                    </div>
+        
+                    <div class="house-basic__icon-text house-basic__icon-text--short">
+                        <img class="house-basic__icon" src="img/坪數.svg" alt="坪數" />
+                        6 坪
+                    </div>
+        
+                    <div class="house-basic__icon-text house-basic__icon-text--short">
+                        <img class="house-basic__icon" src="img/房間數.svg" alt="房間數" /> 4 房間
+                    </div>
+        
+                    <div class="house-basic__icon-text house-basic__icon-text--long">
+                        <img class="house-basic__icon" src="img/衛浴.svg" alt="衛浴" /> 4 衛浴
+                    </div>
+        
+                    <div class="house-basic__icon-text">
+                        <img class="house-basic__icon" src="img/價錢.svg" alt="價錢" />
+                        NT$10000~11000 / 月
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="left-column">
+                <img src="img/大園house.jpg" class="da" alt="House Image">
+            </div>
+            <div class="right-column">
+                <h4 class="house-title">
+                    中壢HOUSE
+                </h4>
+                <div class="house-basic">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/大園house.jpg" class="da" alt="House Image">
+                        </div>
+                        <div class="card-content">
+                            <h4 class="house-title">
+                                中壢HOUSE
+                            </h4>
+                            <div class="house-basic">
+                                <div class="house-basic__icon-text house-basic__icon-text--short">
+                                    <img class="house-basic__icon" src="img/樓層.svg" alt="樓層" />
+                                    2F / 3F
+                                </div>
+                    
+                                <div class="house-basic__icon-text house-basic__icon-text--short">
+                                    <img class="house-basic__icon" src="img/坪數.svg" alt="坪數" />
+                                    6 坪
+                                </div>
+                    
+                                <div class="house-basic__icon-text house-basic__icon-text--short">
+                                    <img class="house-basic__icon" src="img/房間數.svg" alt="房間數" /> 4 房間
+                                </div>
+                    
+                                <div class="house-basic__icon-text house-basic__icon-text--long">
+                                    <img class="house-basic__icon" src="img/衛浴.svg" alt="衛浴" /> 4 衛浴
+                                </div>
+                    
+                                <div class="house-basic__icon-text">
+                                    <img class="house-basic__icon" src="img/價錢.svg" alt="價錢" />
+                                    NT$10000~11000 / 月
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+           
+
+       
+</body>
+</html>

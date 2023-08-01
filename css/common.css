@@ -1,0 +1,46 @@
+body{
+    /* margin: auto; */
+}
+
+main{
+    /* max-width: 1200px; */
+}
+
+header{
+    /* width: 100vw; */
+}
+
+/*fix圈圈*/
+.fix{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+    padding:0 20px 10px 0;
+ }
+ .item{
+     display: block;
+     width: 50px;
+     height: 50px;
+     border-radius: 50px;
+     background-color: #1EBCC3;
+     text-align: center;
+     margin: 20px 0;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ 
+        
+     
+ }
+ .fix a:nth-child(2) .item{
+     background-color: #FFC700;
+ }
+ .fix a{
+     text-decoration: none;
+     font-size: 10px;
+     font-family: "Open Sans";
+     color: #FFF;
+     font-weight: 700;
+ }
