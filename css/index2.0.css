@@ -47,7 +47,9 @@ header{
     
 }
 
-
+@media screen {
+  
+}
 
 .mask-img{
     display: block;
@@ -188,7 +190,7 @@ header{
  .cols {
     display: flex;
     height: 600px;
-    background-color: #FFC700;
+    background-color: #1EBCC3;
 } 
 
 .cols_container {
@@ -227,6 +229,7 @@ header{
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
+    color: #FFF;
 }
 .our_txt_wrap{
     width: 450px;
@@ -323,7 +326,7 @@ header{
   .card {
     grid-column: span 2; /*  rwd grid-column: 1 / 3; */
     background-color: #FFD234;
-    padding: 20px;
+    padding: 100px;
   }
   
   /* Add styles for pic, card_line, txt, h2, h3, and p elements as needed */
@@ -359,7 +362,7 @@ header{
 
   /*footer*/
  .footer{
-    max-width: 1920px;
+    /* max-width: 1920px; */
     /* height: 760px; */
     background: #FFD234;
     position: relative;
