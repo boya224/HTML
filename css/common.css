@@ -44,3 +44,131 @@ header{
      color: #FFF;
      font-weight: 700;
  }
+
+
+
+  /*footer*/
+
+  footer {
+    background-color: #FFD234;
+    padding: 100px;
+    /* height: 500px; */
+  }
+
+  .footer_container{
+    padding: 55px;
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-6 {
+    flex-basis: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+
+
+
+    /* .footer::before{
+      content: '';
+      position: absolute;
+      right: 5%;
+      bottom: 0;
+      width: 593px;
+      height: 724px;
+      background: #AEECEF;
+      border-radius: 593px 593px 0 0;
+    } */
+
+ .social_media_icon{
+    display: flex;
+    margin: 10px;
+    justify-content: flex-end;
+    align-items: center;
+ }
+
+ .social_media_icon img{
+  padding: 5px;
+ }
+    
+    .blue_ar_title{
+    font-family: 'open sans';
+    font-size: 40px;
+    font-weight: 700;
+    margin: 142px 0px 50px 20px;    }
+   
+
+    .blue_ar{
+      /* width: 500px; */
+      background-color: #AEECEF;
+      border-radius: 300px 300px 0px 0px;
+      height: 500px;
+      padding: 50px;
+    }
+    
+    .blue_ar_email input[type="text"] {
+    width: 254px;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #AEECEF;
+    border-radius: 61px; 
+    }
+    ::placeholder{
+    color: #1EBCC3;
+    }
+
+    .blue_ar_email input[type="submit"] {
+    width: 166px;
+    height: 62px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #FFF;
+    color: #1EBCC3;
+    border: none;
+    border-radius: 61px; 
+    cursor: pointer;
+    }
+    .blue_ar_email input[value="SUBMIT"]{
+    font-family: 'open sans';
+    font-size: 20px;
+    }
+    .blue_ar_email input[name="email"]{
+    font-size: 20px;
+    padding-left: 50px;
+    
+    }
+    
+    .footer_link a{
+    padding: 17px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 30px;
+    font-weight: 700;
+    }
+    .line{
+    width: 400px;
+    border-bottom: 1px solid #000;
+    }
+
+    .tel , .address{
+    font-family: 'Zen Maru Gothic', sans-serif;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400; 
+    }
+
+
+ 

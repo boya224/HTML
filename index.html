@@ -20,27 +20,42 @@
 </style>
 <body>
     <header>
-    <nav class="nav_links">
-                
-                        <a href="About.html">About</a>
-                        <a href="Blog.html">Blog</a>
-                        <a href="Activity.html">Activity</a>
-                        <div class="nav_logo">
-                            <a href="index.html"><img src="img/logo_svg.svg" alt=""></a>
-                        </div>
-                        <a href="Q&A.html">Q&A</a>
-                        <a href="Log in.html">Log in</a>
-                        <a href="Sign up.html">Sign up</a>
-                   
-                </nav> 
-            <img src="img/index_banner.png" class="mask-img">
+        <div class="content">
+            <a href="index.html">
+                <img src="img/logo_svg.svg" alt="logo" class="logo">
+            </a>
+            <nav class="menu">
+                <div class="menu_item"><a href="About.html">About</a></div>
+                <div class="menu_item"><a href="Blog.html">Blog</a></div>
+                <div class="menu_item"><a href="Activity.html">Activity</a></div>
+                <div class="menu_item"><a href="Q&A.html">Q&A</a></div>
+                <div class="menu_item"><a href="Log in.html">Log in</a></div>
+                <div class="menu_item"><a href="Sign up.html">Sign up</a></div>
+                </nav>
+            
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+               </div>
+               <nav class="m-menu" id="m-menu">
+                    <a class="m-link" href="About.html">About</a>
+                    <a class="m-link" href="Blog.html">Blog</a>
+                    <a class="m-link" href="Activity.html">Activity</a>
+                    <a class="m-link" href="Q&A.html">Q&A</a>
+                    <a class="m-link" href="Log in.html">Log in</a>
+                    <a class="m-link" href="Sign up.html">Sign up</a>
+        </div>
+               
+           </nav>
+           <img src="img/index_banner.png" class="mask-img">
             <div class="title">煥然的生活時光<br> A REFRESHING VIBE IN LIFE!</div>
             <div class="booknow_btn">
                 <a href="booknow.html">BOOK NOW</a>
             </div>
-            
     </header>
- 
+
+    
 <main>
     <section class="column_section">
 
@@ -178,10 +193,20 @@
             </div> -->
         </div>
     </section>
+
+    <section class="friendly_section">
+        <div class="left_col">
+            <div class="h2_wrap">
+                <h2>Friendly</h2>
+                <h2>Respectful</h2>
+                <h2>Open-minded</h2>
+            </div>
+        </div>
+        <div class="right_col">
+            <img src="img/friendly.svg" alt="">
+        </div>
+    </section>
     
-    <div class="end_pic">
-        <img src="img/friendly.png" alt="">
-    </div>
     
 
     <!-- <section> -->
@@ -224,47 +249,53 @@
     
        
        <!-----------footer-->
-  <footer>
-    <div class="footer">
-        <div class="footer_container">
-            <div class="footer_link">
-            <a href="About.html">About</a>
-            <a href="Blog.html">Blog</a>
-            <a href="Activity.html">Activity</a>
-            <a href="Q&A.html">Q&A</a>
-        </div>
-        <div class="footer_left_end">
-            <div class="line"></div>
-            <div class="social_media_icon">
-                <a href="#"><img src="img/fb social mediacon.svg" alt=""></a>
-                <a href="#"><img src="img/ig social mediacon.svg" alt=""></a>
-                <a href="#"><img src="img/twsocial mediacon.svg" alt=""></a>
-                <a href="#"><img src="img/ytbsocial mediacon.svg" alt=""></a>
+
+       <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-6"> 
+                <div class="footer_container">
+                <div class="footer_link">
+                <a href="About.html">About</a>
+                <a href="Blog.html">Blog</a>
+                <a href="Activity.html">Activity</a>
+                <a href="Q&A.html">Q&A</a>
             </div>
-            <div class="footer_info">
-                <div class="tel">電話: 03-425-1108</div>
-            <div class="address">地址: 桃園市中壢區復興路46號9樓</div>
+            <div class="footer_left_end">
+                <div class="line"></div>
+                <div class="social_media_icon">
+                    <a href="#"><img src="img/fb social mediacon.svg" alt=""></a>
+                    <a href="#"><img src="img/ig social mediacon.svg" alt=""></a>
+                    <a href="#"><img src="img/twsocial mediacon.svg" alt=""></a>
+                    <a href="#"><img src="img/ytbsocial mediacon.svg" alt=""></a>
+                </div>
+                <div class="footer_info">
+                    <div class="tel">電話: 03-425-1108</div>
+                <div class="address">地址: 桃園市中壢區復興路46號9樓</div>
+                </div>
+            </div>
             </div>
         </div>
-        </div>
-        <div class="blue_ar_container">
-        <div class="blue_ar">
-        </div>
-            <div class="blue_ar_email">
+
+
+
+            <div class="col-6 blue_ar">
+                <div class="blue_ar_email">
                 <form>
-                    <div class="blue_ar_title">Collaboration <span>Contact us</span></div>
+                    <div class="blue_ar_title">Collaboration<br> Contact us</div>
 
                     <div class="placeholder_bg">
                         <input type="text" placeholder="Your email" name="email">
                     </div>
                     <input type="submit" value="SUBMIT">
                 </form>
+                </div>
             </div>
-    </div>
+        </div>
+        </div>
+      </footer>
+      
 
-        
-        
-    
-  </footer>
+
 </body>
 </html>
